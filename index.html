@@ -4,15 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Page</title>
+
     <style>
-      body { max-width: 800px; margin: 40px auto; font-family: system-ui, Arial; line-height: 1.6; padding: 0 16px; }
-      pre { white-space: pre-wrap; }
+      body {
+        max-width: 800px;
+        margin: 60px auto;
+        padding: 0 20px;
+        font-family: system-ui, Arial, sans-serif;
+        background-color: #f4f6f8;
+        color: #222;
+        line-height: 1.6;
+      }
+
+      .card {
+        background: white;
+        padding: 24px;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        margin-bottom: 32px;
+      }
+
+      h1, h2 {
+        margin-top: 0;
+      }
+
+      .about p {
+        margin: 6px 0;
+      }
+
+      .label {
+        font-weight: 600;
+      }
     </style>
   </head>
-  <body>
-    <h1>Title</h1>
 
-    <pre>
-Hello my name is Sofia!    </pre>
+  <body>
+    <div class="card">
+      <h1>Welcome</h1>
+      <p>Hello, my name is Sofia.</p>
+    </div>
+
+    <div class="card about">
+      <h2>About Me</h2>
+      <p><span class="label">From:</span> Miami, Florida</p>
+      <p><span class="label">School:</span> Babson College</p>
+      <p><span class="label">Age:</span> 21</p>
+    </div>
   </body>
 </html>
